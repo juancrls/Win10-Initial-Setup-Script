@@ -1,3 +1,4 @@
+
 ##########
 # Win 10 / Server 2016 / Server 2019 Initial Setup Script - Default preset
 # Author: Disassembler <disassembler@dasm.cz>
@@ -9,62 +10,61 @@
 RequireAdmin
 
 ### Privacy Tweaks ###
-DisableTelemetry                # EnableTelemetry
-DisableWiFiSense                # EnableWiFiSense
-# DisableSmartScreen            # EnableSmartScreen
-# DisableWebSearch              # EnableWebSearch
-DisableAppSuggestions           # EnableAppSuggestions
-DisableActivityHistory          # EnableActivityHistory
-DisableBackgroundApps           # EnableBackgroundApps
-# DisableSensors                # EnableSensors
-DisableLocation                 # EnableLocation
-DisableMapUpdates               # EnableMapUpdates
-DisableFeedback                 # EnableFeedback
-DisableTailoredExperiences      # EnableTailoredExperiences
-DisableAdvertisingID            # EnableAdvertisingID
-DisableWebLangList              # EnableWebLangList
-DisableCortana                  # EnableCortana
-# DisableBiometrics             # EnableBiometrics
-# DisableCamera                 # EnableCamera
-# DisableMicrophone             # EnableMicrophone
-DisableErrorReporting           # EnableErrorReporting
+DisableTelemetry               # EnableTelemetry   
+ DisableWiFiSense              # EnableWiFiSense         # ferramenta feita para coletar dados em pontos de wifi públicos
+ DisableSmartScreen            # EnableSmartScreen
+ EnableWebSearch               # DesableWebSearch           # ferramenta feita para pesquisas na internet
+ DisableAppSuggestions         # EnableAppSuggestions
+ EnableActivityHistory         # DisableActivityHistory     # ferramenta feita para salvar o histórico de atividade
+ EnableBackgroundApps          # EnableBackgroundApps
+ EnableSensors                 # EnableSensors             # ferramenta para ativar sensores 
+ DisableLocation               # EnableLocation
+ DisableMapUpdates             # EnableMapUpdates          # ferramenta feita para mandar atualizações do mapa
+ DisableFeedback               # EnableFeedback
+ DisableTailoredExperiences     # EnableTailoredExperiences # ferramenta feita para entregar recomendações da Microsoft 
+ DisableAdvertisingID           # EnableAdvertisingID
+ DisableWebLangList             # EnableWebLangList         # ferramenta feita para mostrar linguagem nativa(traduções) em sites 
+ DisableBiometrics              # EnableBiometrics
+# DisableCamera                 # EnableCamera              # ferramenta feita para ativar a câmera
+# EnableMicrophone              # DisableMicrophone
+DisableErrorReporting           # EnableErrorReporting    # ferramenta feita para mandar mensagens de erro
 # SetP2PUpdateLocal             # SetP2PUpdateInternet          # SetP2PUpdateDisable
-DisableDiagTrack                # EnableDiagTrack
+DisableDiagTrack                # EnableDiagTrack           # ferramenta feita para mandar dados automaticamente para a microsoft
 DisableWAPPush                  # EnableWAPPush
-# EnableClearRecentFiles        # DisableClearRecentFiles
-# DisableRecentFiles            # EnableRecentFiles
-
+# EnableClearRecentFiles        # DisableClearRecentFiles   # ferramenta feita para limpar arquivos recentes
+EableRecentFiles                # EnableRecentFiles
 ### Security Tweaks ###
-# SetUACLow                     # SetUACHigh
-# EnableSharingMappedDrives     # DisableSharingMappedDrives
+
+SetUACHigh                      # SetUACLow
+EnableSharingMappedDrives       # DisableSharingMappedDrives # ferramenta feita para acessar pastas compartilhadas 
 DisableAdminShares              # EnableAdminShares
-# DisableFirewall               # EnableFirewall
-# HideDefenderTrayIcon          # ShowDefenderTrayIcon
-# DisableDefender               # EnableDefender
-# DisableDefenderCloud          # EnableDefenderCloud
-# EnableCtrldFolderAccess       # DisableCtrldFolderAccess
+EnableFirewall                  # DisableFirewall            # ferramenta feita para ativar um firewall
+ShowDefenderTrayIcon            # HideDefenderTrayIcon
+EnableDefender                  # DisableDefender            # ferramenta feita para ativar um anti-malware
+EnableDefenderCloud             # DisableDefenderCloud
+# EnableCtrldFolderAccess       # DisableCtrldFolderAccess  # ferramenta feita para ativar/desativar os atalhos do ctrl
 # EnableCIMemoryIntegrity       # DisableCIMemoryIntegrity
-# EnableDefenderAppGuard        # DisableDefenderAppGuard
+# EnableDefenderAppGuard        # DisableDefenderAppGuard   # ferramenta feita para ativar um anti-malware de apps
 HideAccountProtectionWarn       # ShowAccountProtectionWarn
-# DisableDownloadBlocking       # EnableDownloadBlocking
+# DisableDownloadBlocking       # EnableDownloadBlocking    # ferramenta feita para ativar um bloqueador de downloads
 DisableScriptHost               # EnableScriptHost
-EnableDotNetStrongCrypto        # DisableDotNetStrongCrypto
+EnableDotNetStrongCrypto        # DisableDotNetStrongCrypto # ferramenta feita para criptografar dotnet's
 # EnableMeltdownCompatFlag      # DisableMeltdownCompatFlag
-EnableF8BootMenu                # DisableF8BootMenu
+EnableF8BootMenu                # DisableF8BootMenu         # ferramenta feita para abrir o menu de boot 
 # DisableBootRecovery           # EnableBootRecovery
-# DisableRecoveryAndReset       # EnableRecoveryAndReset
+# DisableRecoveryAndReset       # EnableRecoveryAndReset    # ferramenta feita para ativar/desativar a recuperação e a reinicialização
 SetDEPOptOut                    # SetDEPOptIn
 
 ### Network Tweaks ###
-SetCurrentNetworkPrivate        # SetCurrentNetworkPublic
+SetCurrentNetworkPrivate        # SetCurrentNetworkPublic   # ferramenta feita para marcar a network pública atual
 # SetUnknownNetworksPrivate     # SetUnknownNetworksPublic
-# DisableNetDevicesAutoInst     # EnableNetDevicesAutoInst
+# DisableNetDevicesAutoInst     # EnableNetDevicesAutoInst  # ferramenta feita para ativar a instalação automatica de serviços
 # DisableHomeGroups             # EnableHomeGroups
-# DisableSMB1                   # EnableSMB1
+# DisableSMB1                   # EnableSMB1                # ferramenta feita para ativar a mensagem de bloqueio do servidor
 # DisableSMBServer              # EnableSMBServer
-# DisableNetBIOS                # EnableNetBIOS
+# DisableNetBIOS                # EnableNetBIOS             # ferramenta feita para ativar a comunicação entre maquinas
 # DisableLLMNR                  # EnableLLMNR
-# DisableLLDP                   # EnableLLDP
+# DisableLLDP                   # EnableLLDP                # 
 # DisableLLTD                   # EnableLLTD
 # DisableMSNetClient            # EnableMSNetClient
 # DisableQoS                    # EnableQoS
@@ -103,7 +103,7 @@ EnableNTFSLongPaths             # DisableNTFSLongPaths
 # DisableAutoRebootOnCrash      # EnableAutoRebootOnCrash
 
 ### UI Tweaks ###
-DisableActionCenter             # EnableActionCenter
+# DisableActionCenter             # EnableActionCenter
 DisableLockScreen               # EnableLockScreen
 # DisableLockScreenRS1          # EnableLockScreenRS1
 HideNetworkFromLockScreen       # ShowNetworkOnLockScreen
@@ -119,7 +119,7 @@ HideTaskView                    # ShowTaskView
 ShowSmallTaskbarIcons           # ShowLargeTaskbarIcons
 SetTaskbarCombineWhenFull       # SetTaskbarCombineNever        # SetTaskbarCombineAlways
 HideTaskbarPeopleIcon           # ShowTaskbarPeopleIcon
-ShowTrayIcons                   # HideTrayIcons
+# ShowTrayIcons                   # HideTrayIcons
 # ShowSecondsInTaskbar          # HideSecondsFromTaskbar
 DisableSearchAppInStore         # EnableSearchAppInStore
 DisableNewAppPrompt             # EnableNewAppPrompt
@@ -176,7 +176,7 @@ HidePicturesFromThisPC          # ShowPicturesInThisPC
 # HidePicturesFromExplorer      # ShowPicturesInExplorer
 HideVideosFromThisPC            # ShowVideosInThisPC
 # HideVideosFromExplorer        # ShowVideosInExplorer
-Hide3DObjectsFromThisPC         # Show3DObjectsInThisPC
+# Hide3DObjectsFromThisPC         # Show3DObjectsInThisPC
 # Hide3DObjectsFromExplorer     # Show3DObjectsInExplorer
 # HideIncludeInLibraryMenu      # ShowIncludeInLibraryMenu
 # HideGiveAccessToMenu          # ShowGiveAccessToMenu
@@ -194,10 +194,10 @@ UninstallThirdPartyBloat        # InstallThirdPartyBloat
 DisableXboxFeatures             # EnableXboxFeatures
 # DisableFullscreenOptims       # EnableFullscreenOptims
 DisableAdobeFlash               # EnableAdobeFlash
-DisableEdgePreload              # EnableEdgePreload
-DisableEdgeShortcutCreation     # EnableEdgeShortcutCreation
-DisableIEFirstRun               # EnableIEFirstRun
-DisableFirstLogonAnimation      # EnableFirstLogonAnimation
+# DisableEdgePreload              # EnableEdgePreload
+# DisableEdgeShortcutCreation     # EnableEdgeShortcutCreation
+# DisableIEFirstRun               # EnableIEFirstRun
+# DisableFirstLogonAnimation      # EnableFirstLogonAnimation
 DisableMediaSharing             # EnableMediaSharing
 # UninstallMediaPlayer          # InstallMediaPlayer
 # UninstallInternetExplorer     # InstallInternetExplorer
